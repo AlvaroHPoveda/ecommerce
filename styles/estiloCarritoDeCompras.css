@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Montserrat:wght@300&family=Red+Hat+Display:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(https://marketplace.canva.com/EAEK4rYL-Qk/1/0/1600w/canva-pastel-arte-l%C3%ADquido-tendencia-moderna-fondo-para-zoom-Q6zORw9qrdA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  position: sticky;
+  top: 0;
+}
+nav {
+  /*background-color: rgb(204, 0, 255);*/
+  background-image: url("../img/fodonav.jpg");
+  background-repeat: no-repeat;
+  background-size: 100rem 20vh;
+  height: 20vh;
+  box-shadow: 5px 2px 5px gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  width: 10rem;
+  margin: 4rem;
+}
+
+main {
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+  margin: 1rem;
+  color: rgb(77, 108, 192);
+  font-family: "Corinthia", cursive;
+  font-size: 4rem;
+  text-shadow: 5px 2px 5px rgb(77, 108, 192);
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-columns:repeat(auto-fill,minmax(min(100%) 15rem,1fr);*/
+}
+.card {
+  background-color: rgba(204, 0, 255, 0.322);
+  border-radius: 5px;
+  box-shadow: 5px 2px 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.imgProd {
+  width: 60%;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+button {
+  width: 50%;
+  align-self: center;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(0, 173, 241);
+  color: aliceblue;
+}
+h3 {
+  font-family: "Fuzzy Bubbles", cursive;
+}
+h5 {
+  position: fixed;
+  top: 35px;
+  left: 48%;
+  font-size: 2rem;
+}
+#bolsa {
+  width: 8rem;
+  border-radius: 30%;
+  position: fixed;
+  top: -0.5rem;
+  left: 40%;
+}
+
+#cardComp {
+  background-color: rgba(204, 0, 255, 0.322);
+  border-radius: 5px;
+  box-shadow: 5px 2px 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+#carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 25%;
+  position: fixed;
+  top: 8rem;
+  right: 50px;
+  visibility: hidden;
+}
+.cardCarrito {
+  background-color: rgba(0, 89, 255, 0.486);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 2px 5px gray;
+  border-radius: 5px;
+  margin: 2px;
+}
+h2 {
+  text-align: center;
+  border: 0.1px solid;
+  border-radius: 5px;
+  background-color: rgba(97, 224, 241, 0.575);
+  color: rgb(1, 9, 17);
+  box-shadow: 5px 2px 5px gray;
+}
+#quitar2 {
+  width: 50px;
+}
+
+article {
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+
+nav div {
+  height: 15vh;
+  width: 40vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#botoncarrito {
+  background-color: rgba(97, 224, 241, 0.575);
+  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+  grid-column: 1;
+  grid-row: span 2;
+  color: black;
+  font-weight: 900;
+}
+
+#contador {
+  background-color: rgba(0, 0, 139, 0.671);
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: aliceblue;
+  padding-top: 0.3rem;
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+#carrito1 {
+  width: 5rem;
+  grid-column: 2;
+  grid-row: span 1;
+}
